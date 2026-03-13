@@ -25,7 +25,7 @@ return new class extends Migration
 
             // Relacionar con otras tablas (id_marca, id_presentacion, id_categoria)
             $table->unsignedBigInteger('id_marca');
-            $table->unsignedBigInteger('id_presentacion');
+            //$table->unsignedBigInteger('id_presentacion');
             $table->unsignedBigInteger('id_categorias');
             // Claves foráneas para las relaciones
             $table->foreign('id_marca')->references('id')->on('marcas')->onDelete('cascade');
