@@ -29,7 +29,7 @@ return new class extends Migration
             $table->unsignedBigInteger('id_categorias');
             // Claves foráneas para las relaciones
             $table->foreign('id_marca')->references('id')->on('marcas')->onDelete('cascade');
-            $table->foreign('id_presentacion')->references('id')->on('presentaciones')->onDelete('cascade');
+            //$table->foreign('id_presentacion')->references('id')->on('presentaciones')->onDelete('cascade');
             $table->foreign('id_categorias')->references('id')->on('categorias')->onDelete('cascade');
             // Estado del producto, valor por defecto 1 (activo)
             $table->unsignedTinyInteger('estado')->default(1);
